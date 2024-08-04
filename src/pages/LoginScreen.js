@@ -7,14 +7,23 @@ import {
   Text,
   useColorScheme,
   View,
+  Button
 } from 'react-native'; 
 
-function LoginScreen(): React.JSX.Element {
+function LoginScreen({navigation}) {
+
+  const signUp = async () => {
+    navigation.navigate('CreateAccount');
+  };
+
   return (
-    <View>
-      <Text>
-        LoginScreen
-      </Text>
+    <View >
+      <Button
+        title="LoginScreen"
+        onPress={signUp}
+        color="black"
+ 
+      />
     </View>
   );
 };

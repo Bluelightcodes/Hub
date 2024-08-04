@@ -8,7 +8,8 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import LoginScreen from './src/pages/Loginscreen';
+import LoginScreen from './src/pages/LoginScreen';
+import CreateAccount from './src/pages/CreateAccount';
 
 
 import React from 'react';
@@ -29,7 +30,7 @@ function App(): React.JSX.Element {
     <NavigationContainer>
       <Stack.Navigator initialRouteName="LoginScreen">
         <Stack.Screen name="LoginScreen" component={LoginScreen} options={{ headerShown: false }} />
-        
+        <Stack.Screen name="CreateAccount" component={CreateAccount} options={{ headerShown: false }} />
       </Stack.Navigator>
     </NavigationContainer>
   );
