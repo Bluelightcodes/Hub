@@ -10,7 +10,7 @@ import {
   Button
 } from 'react-native'; 
 
-function LoginScreen({navigation}) : React.JSX.Element {
+function LoginScreen({navigation}) {
 
   const signUp = async () => {
     navigation.navigate('CreateAccount');

@@ -9,7 +9,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import LoginScreen from './src/pages/LoginScreen';
-import CreateAccount from './src/pages/CreateAccount.tsx';
+import CreateAccount from './src/pages/CreateAccount';
 
 
 import React from 'react';
