@@ -10,22 +10,21 @@ import {
   Button
 } from 'react-native'; 
 
-function LoginScreen({navigation}) : React.JSX.Element {
+function CreateAccount({navigation}) : React.JSX.Element {
 
   const signUp = async () => {
-    navigation.navigate('CreateAccount');
+    navigation.navigate('LoginScreen');
   };
 
   return (
     <View >
       <Button
-        title="LoginScreen"
+        title="CreateAccount"
         onPress={signUp}
         color="black"
- 
       />
     </View>
   );
 };
 
-export default LoginScreen;
+export default CreateAccount;
